@@ -39,7 +39,7 @@ class UserController extends Controller
 
         if (Auth::attempt($credentials)) {
 
-            // $user = $credentials->user();
+            $user = $credentials->user();
             // $user->tokens->delete();
             // $token = $user->createToken(Auth::user()->plainTextToken);
 
